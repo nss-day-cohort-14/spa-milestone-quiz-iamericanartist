@@ -9,3 +9,12 @@ body {
   font-size: 1.3rem;
   color: indigo;
 }
+
+
+.container-fluid {
+  padding-top: 80px;
+}
+
+.col-md-4 {
+  border: 2px solid green;
+}

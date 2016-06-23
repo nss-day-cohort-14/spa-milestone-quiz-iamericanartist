@@ -9,31 +9,49 @@
   <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
+ 
+<nav class="navbar navbar-default navbar-fixed-top navbar-collapse nav-prop">
+  <div class="navbar-form navbar-left navbar-fixed-top" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Update Description...">
+    </div>
+    <button type="button" class="btn btn-default">Clear</button>
+  </div>
+  </nav>
 
-  <div id:"outputEl"></div>
-  
+  <div class="container-fluid">
+    <div id="outputEl"></div>
+  </div>
+
+
+
+
+
+
+
+
 
 
 
 
   <hr> <!--~~~~~~~~ BEGIN DIRECTIONS ~~~~~~~~-->
   <div id="directions">
-    <h2>SPA Milestone / Car Lot </h2>
+ <!--    <h2>SPA Milestone / Car Lot </h2>
     <h3>Instructions</h3>
       <p>You operate a used car lot, and need to have an application where you can update the description and availability of each car in your inventory. You are going to using the Bootstrap grid to lay out your HTML structure.</p>
-
+ -->
     <h4>Behavior</h4>
     <ol>
       <!-- <li>Create an array of cars in the `inventory.json` file (see example structure below). Put at least three cars in the array.</li> -->
       <!-- <li>When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.</li> -->
-      <li>Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of `container`.</li>
-      <li>Put a standard Bootstrap navbar element at the top of your page.</li>
-      <li>Put only two elements in the navbar.
+<!--       <li>Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of `container`.</li> -->
+      <!-- <li>Put a standard Bootstrap navbar element at the top of your page.</li> -->
+      <!-- <li>Put only two elements in the navbar.
         <ol>
           <li>A text input field.</li>
           <li>A button.</li>
         </ol>
-      </li>
+      </li> -->
       <li>Make sure you display all properties of the car in the DOM. Basic styling is up to you.</li>
       <li>Put a border around the car information that matches the color of the car. To make this easier, set the color property value to an existing <a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">(named CSS color)</a>.</li>
       <li>When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.</li>
@@ -55,6 +73,7 @@
     </ol>
   </div> <!--~~~~~~~~ END OF DIRECTIONS ~~~~~~~~-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/carLot.js"></script>
   <script src="js/quiz.js"></script>
 </body>
