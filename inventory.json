@@ -1,0 +1,29 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },{
+      "make": "Ford",
+      "model": "Truckster",
+      "year": "2010",
+      "price": "6950",
+      "color": "Brown",
+      "purchased": false,
+      "description": "Great condition 2010 Ford Truckster with 100001 miles and power sunroof. This is a limited edition jewel!"
+    },{
+      "make": "Honda",
+      "model": "Qwerty",
+      "year": "2017",
+      "price": "23999",
+      "color": "Envy",
+      "purchased": false,
+      "description": "All your base are belong to Qwerty.You can't handle the qwerty. Comes with full qwerty keyboard."
+    }
+  ]
+}

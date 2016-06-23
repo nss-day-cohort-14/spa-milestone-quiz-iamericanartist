@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SPA Milestone Quiz / CAR LOT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+  <div id:"outputEl"></div>
+  
+
+
+
+
+  <hr> <!--~~~~~~~~ BEGIN DIRECTIONS ~~~~~~~~-->
+  <div id="directions">
+    <h2>SPA Milestone / Car Lot </h2>
+    <h3>Instructions</h3>
+      <p>You operate a used car lot, and need to have an application where you can update the description and availability of each car in your inventory. You are going to using the Bootstrap grid to lay out your HTML structure.</p>
+
+    <h4>Behavior</h4>
+    <ol>
+      <!-- <li>Create an array of cars in the `inventory.json` file (see example structure below). Put at least three cars in the array.</li> -->
+      <!-- <li>When your page first loads, you need to use an XHR to load the contents of the JSON file, and parse them into a native JavaScript object.</li> -->
+      <li>Loop over your array of cars and build up an HTML string to build a card for each car. Also, use Bootstrap to create rows. Each row should contain 3 columns. Make sure you have a parent element with a class of `container`.</li>
+      <li>Put a standard Bootstrap navbar element at the top of your page.</li>
+      <li>Put only two elements in the navbar.
+        <ol>
+          <li>A text input field.</li>
+          <li>A button.</li>
+        </ol>
+      </li>
+      <li>Make sure you display all properties of the car in the DOM. Basic styling is up to you.</li>
+      <li>Put a border around the car information that matches the color of the car. To make this easier, set the color property value to an existing <a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">(named CSS color)</a>.</li>
+      <li>When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.</li>
+      <li>Also, on click of the car element, clear the value of the text input in the navbar, and put the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus">(cursor in the text input)</a>.</li>
+      <li>When you start typing into the navbar's text input, the description of the currently selected car should be bound to what you are typing in and match it exactly.</li>
+    </ol>
+
+    <h4>Technical Requirements</h4>
+    <ol>
+      <li>Create one global variable (e.g. `CarLot`) and use the IIFE pattern to augment it two times in separate JavaScript files.</li>
+      <li>The first IIFE should add a public function (e.g. `loadInventory`) that loads the `inventory.json` file and stores the inventory in a private variable. It should also expose a public getter to read the array of cars (e.g. `getInventory`).</li>
+      <li>The second IIFE should augment the original one with a function that creates all of the `eventHandlers` that you need for the application. Name the function `activateEvents`.</li>
+      <li>The final IIFE should augment the object with two more functions. One function resets the border thickness and background color for each car element back to the original values. The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
+        <ol>
+          <li>A car DOM element that was clicked on.</li>
+          <li>A color name.</li>
+        </ol>
+      </li>
+    </ol>
+  </div> <!--~~~~~~~~ END OF DIRECTIONS ~~~~~~~~-->
+
+  <script src="js/carLot.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

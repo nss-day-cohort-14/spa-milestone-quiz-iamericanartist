@@ -1,0 +1,11 @@
+* {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+body {
+  box-sizing: border-box;
+}
+#directions {
+  margin: 25px;
+  font-size: 1.3rem;
+  color: indigo;
+}
