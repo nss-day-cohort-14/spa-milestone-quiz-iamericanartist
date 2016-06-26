@@ -22,7 +22,7 @@
       "year": "2017",
       "price": "23999",
       "color": "Gold",
-      "purchased": false,
+      "purchased": true,
       "description": "All your base are belong to Qwerty.You can't handle the qwerty. Comes with full qwerty keyboard."
     },{
       "make": "Honda",
@@ -38,7 +38,7 @@
       "year": "1995",
       "price": "1995",
       "color": "Navy",
-      "purchased": false,
+      "purchased": true,
       "description": "Super sweet Supra bro! T-Tops and all the fixins."
     },{
       "make": "Toyota",
