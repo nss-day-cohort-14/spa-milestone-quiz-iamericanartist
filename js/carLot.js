@@ -1,6 +1,6 @@
 var CarLot = (function(modifyCars) {
 
-  console.log("IIFE /1/ CarLot.js loaded"); //must load first!
+  console.log("IIFE /1/ CarLot.js loaded");
 
   var inventory = [];
 
