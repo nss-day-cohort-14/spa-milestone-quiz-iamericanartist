@@ -11,6 +11,7 @@ var CarLot = (function(modifyCars) {
         card = event.currentTarget;
         // console.log("IIFE /2/ current target ",card); //conLogs the whole card
         console.log("IIFE /2/ current target ",card.firstChild.nextSibling.nextSibling.nextSibling); //conLogs the "MODEL" of the card
+        modifyCars.resetValues();
         modifyCars.clickedStyling(card, "white");
         textInputUpdater.value = ""; // clear input 
         textInputUpdater.focus(); // put cursor in the text input

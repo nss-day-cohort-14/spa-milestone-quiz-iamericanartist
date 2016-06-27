@@ -7,27 +7,14 @@ var CarLot = (function(modifyCars) {
     car.style.backgroundColor = color;
   }
 
-  // Attempt 1 at resetting inline styling
-  // //currently not working... Not sure how to force the inline styling BACK to what it was?
-  // modifyCars.reset = function(car) {
-  //   car.style.borderWidth = "3px" ;
-  //   car.classlist.add(carCardClass);
-
-  // }
-
-  // Attempt 2 at resetting inline styling 
-  // if (event.currentTarget === currently clicked card) {
-  //   modifyCars.clickedStyling = function(car, color) {
-  //     car.style.borderWidth = "6px";
-  //     car.style.backgroundColor = color;
-  //   } else {
-  //   //currently not working... Not sure how to force the inline styling BACK to what it was?
-  //     modifyCars.reset = function(car) {
-  //     car.style.borderWidth = "3px" ;
-  //     car.classlist.add(carCardClass);
-  //   style="border:3px solid ${inventory[i].color}"
-  //   }
-  // }
+ modifyCars.resetValues = function() {
+    var car = document.getElementsByClassName("carCardClass");
+    for (var k=0; k<car.length; k++) {
+      item=car[k];
+      item.style.backgroundColor = "beige";
+      item.style.borderWidth = "3px";
+    };
+  };
 
   return modifyCars;
 })(CarLot || {});
