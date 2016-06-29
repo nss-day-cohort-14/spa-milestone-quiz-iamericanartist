@@ -5,6 +5,7 @@ var CarLot = (function(modifyCars) {
   modifyCars.clickedStyling = function(car, color) {
     car.style.borderWidth = "6px";
     car.style.backgroundColor = color;
+    car.classList.add("active");
   }
 
  modifyCars.resetValues = function() {
@@ -13,6 +14,7 @@ var CarLot = (function(modifyCars) {
       item=car[k];
       item.style.backgroundColor = "beige";
       item.style.borderWidth = "3px";
+      item.classList.remove("active");
     };
   };
 

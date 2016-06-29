@@ -4,7 +4,7 @@ var CarLot = (function(modifyCars) {
 
   modifyCars.activateEvents = function() {
     var thisCardHere = document.getElementsByClassName("carCardClass");
-    var card;
+    var card = null;
 
     for (var j = 0; j < thisCardHere.length; j++) {
       thisCardHere[j].addEventListener("click", function(event) {
@@ -20,10 +20,15 @@ var CarLot = (function(modifyCars) {
     } // END - for loop
 
     textInputUpdater.addEventListener("keyup", function (event){ // ENTER Key listener on text field
+      if (card === null) {
+        alert("YOU NEED TO PICK A CAR FIRST");
+      }
       var qwerty = card.lastChild.previousSibling;
       if (event.which === 13) {
         textInputUpdater.value = "";
+        modifyCars.resetValues();
         textInputUpdater.blur();
+        card = null;
         // console.log(">>Enter pushed, text added, input cleared", textInputUpdater.value);
       } else {
         qwerty.innerHTML = textInputUpdater.value;
@@ -31,6 +36,9 @@ var CarLot = (function(modifyCars) {
       }
     }); // END - textInputUpdater.addEventListener
   }; // END - modifyCars.activateEvents
+
+  // if card is not selected then alert
+
 
   return modifyCars;
 })(CarLot || {});
