@@ -37,8 +37,5 @@ var CarLot = (function(modifyCars) {
     }); // END - textInputUpdater.addEventListener
   }; // END - modifyCars.activateEvents
 
-  // if card is not selected then alert
-
-
   return modifyCars;
 })(CarLot || {});

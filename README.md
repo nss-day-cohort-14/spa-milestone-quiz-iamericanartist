@@ -1,27 +1,8 @@
 # Single Page Applications Quiz
+## Single Page App / Quiz
 
-## Setup
+![Quiz screenshot](images/spaQuiz.jpg?raw=true "Quiz Screenshot")
 
-1. Create the working directory for the quiz first.
-
-    ```bash
-    mkdir -p ~/workspace/quizzes/spa && cd $_
-    ```
-
-1. Clone this repository and `cd` into the directory it creates.
-1. Now run the following commands.
-
-    ```bash
-    git checkout -b quiz
-    touch index.html
-    touch quiz.js
-    touch quiz.css
-    touch inventory.json
-    ```
-
-You are now ready to work in the `quiz` branch.
-
-When your work in complete, push up the branch (`git push origin quiz`) and submit the pull request on Github.
 
 ## Instructions
 
