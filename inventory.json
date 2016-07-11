@@ -1,0 +1,53 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "Crimson",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },{
+      "make": "Ford",
+      "model": "Truckster",
+      "year": "2010",
+      "price": "6950",
+      "color": "Cyan",
+      "purchased": false,
+      "description": "Great condition 2010 Ford Truckster with 100001 miles and power sunroof. This is a limited edition jewel!"
+    },{
+      "make": "Honda",
+      "model": "Qwerty",
+      "year": "2017",
+      "price": "23999",
+      "color": "Gold",
+      "purchased": true,
+      "description": "All your base are belong to Qwerty.You can't handle the qwerty. Comes with full qwerty keyboard."
+    },{
+      "make": "Honda",
+      "model": "Asdf",
+      "year": "2017",
+      "price": "23999",
+      "color": "Magenta",
+      "purchased": false,
+      "description": "I don't know what to say about this car that can't be said about Florida."
+    },{
+      "make": "Toyota",
+      "model": "Supra",
+      "year": "1995",
+      "price": "1995",
+      "color": "Navy",
+      "purchased": true,
+      "description": "Super sweet Supra bro! T-Tops and all the fixins."
+    },{
+      "make": "Toyota",
+      "model": "Camry",
+      "year": "2005",
+      "price": "2999",
+      "color": "Silver",
+      "purchased": false,
+      "description": "Just like your Mom's Camry."
+    }
+  ]
+}
